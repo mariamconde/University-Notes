@@ -128,7 +128,7 @@ Which of the following Big O notations is equivalent to O(N + 9999)?
 *  N^2 + 1
 *  N^2 - 10000
 *  O(1)
-*  **O(N)8**
+*  **O(N)**
 * O(N^2) 
 
 `public static int search(int[] numbers, int targetNumber)
