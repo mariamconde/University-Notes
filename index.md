@@ -122,14 +122,14 @@ T(N)/G(N) = (2N^2 + N + 3)/(N^2) = 2 + 1/N + 3/N^2 = 2 + 1/k + 3/k^2 = 2
 T(N) = aN^2 + bN + c = O(N^2)
 
 Which of the following Big O notations is equivalent to O(N + 9999)?
-	A) 100000
-	B) 3
-	C) 2N + 1
-	D) N^2 + 1
-	E) N^2 - 10000
-	F) O(1)
-	**G) O(N)8**
-	H) O(N^2) 
+	* 100000
+	* 3
+	* 2N + 1
+	* N^2 + 1
+        * N^2 - 10000
+	* O(1)
+	* **O(N)8**
+	* O(N^2) 
 
 `public static int search(int[] numbers, int targetNumber)
 {
