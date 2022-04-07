@@ -76,17 +76,17 @@ Test list[mid] == target
 If it evaluates to be true
 Return mid
 
-`If list[mid] < target
-Tae left half only focused. cannot be in the left side
+If list[mid] < target
+Target left half only focused. cannot be in the left side
 Target larger in the middle then
 Low = mid +1 ignore left half
 Else 
-High = mid -1`
+High = mid -1
 
 
 `if (list.isEmpty()) { 
 	throw new EmptyCollectionException(); 
-} 
+}
 SingleLinkedNode curr = list.first(); 
 SingleLinkedNode max = list.first(); 
 	while (curr.getNext() != null) { 
