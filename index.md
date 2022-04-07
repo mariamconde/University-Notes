@@ -1,4 +1,5 @@
 # Compsci Note April 7th
+### Data Structures and Algorithms
 Big O Notation
 
 Gives an upper bound of the complexity in the worst case, helping to quantify performance as the input size becomes arbitrarily large.
@@ -40,3 +41,116 @@ o(n^2)
                 * Ignore the lower-growth-order subexpression(s)
                 * Ignore the coefficient of the highest-growth-order subexpression
 * Example:   `4n3 + 2n2 + 6n + log n + 4  thus also simplifies to: O(n3) `
+
+## Stacks and Queues
+Stacks which are a Last In First Out (LIFO) model
+Queues are what we call a First In First Out (FIFO)
+
+Insert in end
+Remove from the front
+
+## Binary Search
+Sorted list 1 2 3 4 5 16
+Linear search O(n) All items have already been sorted.
+Compare with search target
+Smaller
+Larger 
+Or equal to
+
+Chance to narrow down the search space
+Don’t need to search the right half 
+If 4 is smaller than the target 
+
+
+
+Target : 7
+2 4 6 11 16
+Lower index:2 
+High: 16
+1st Iteration: calculate the mid index
+Low: 0
+High: 4
+
+Mid: low + high / 2= 2
+Test list[mid] == target
+If it evaluates to be true
+Return mid
+
+`If list[mid] < target
+Tae left half only focused. cannot be in the left side
+Target larger in the middle then
+Low = mid +1 ignore left half
+Else 
+High = mid -1`
+
+
+`if (list.isEmpty()) { 
+	throw new EmptyCollectionException(); 
+} 
+SingleLinkedNode curr = list.first(); 
+SingleLinkedNode max = list.first(); 
+	while (curr.getNext() != null) { 
+		if (max.getElement().compareTo(curr.getElement()) < 0) { 
+	max = curr; 
+}
+curr.setNext(curr); 
+} 
+return max.getElement(); 
+}`
+
+## Whiteboard Notes
+
+Growth Scale/Rate
+
+T(N) = 3N + 2 = O(N) <- Big O Notation
+G(N) = 2N = O(N)
+
+Let us denote N = k, T(N)/G(N) = (3n+2)/(2n) = (3k+2)/(2k) = 3/2
+
+Now let us denote N = 2k, (T(N)/G(N)) = (3x)(2k)+2/(2x)(2k) = 3/2
+
+T(N) = aN + b = O(N)
+--------------------------------------------------------------
+
+T(N) = 2N^2 + N + 3 -> O(N^2)
+G(N) = N^2 = O(N^2)
+
+1. Let us denote N = k (k is infinite)
+T(N)/G(N) = (2N^2 + N + 3)/(N^2) = 2 + 1/N + 3/N^2 = 2 + 1/k + 3/k^2 = 2
+
+2. Let us denote N = 2k, T(N)/G(N) = 2 + 1/2k + 3/((2k)^2) = 2
+
+T(N) = aN^2 + bN + c = O(N^2)
+--------------------------------------------------------------
+
+Which of the following Big O notations is equivalent to O(N + 9999)?
+
+A. 100000
+B. 3
+C. 2N + 1
+D. N^2 + 1
+E. N^2 - 10000
+F. O(1)
+G. O(N) <- **Answer**
+H. O(N^2) 
+--------------------------------------------------------------
+
+`public static int search(int[] numbers, int targetNumber)
+{
+// int[] numbers <- Input size N
+// For Loop performs N loops
+
+  for (int index = 0; index < numbers.length; index++)
+  {
+    if (numbers[index] == targetNumber)
+    {
+      return index;
+    }
+  }
+  return -1;
+}`
+
+T(N) = 3N + 2
+O(N) = 3N + 2/3N + 1
+
+
