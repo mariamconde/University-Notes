@@ -110,7 +110,6 @@ Let us denote N = k, T(N)/G(N) = (3n+2)/(2n) = (3k+2)/(2k) = 3/2
 Now let us denote N = 2k, (T(N)/G(N)) = (3x)(2k)+2/(2x)(2k) = 3/2
 
 T(N) = aN + b = O(N)
---------------------------------------------------------------
 
 T(N) = 2N^2 + N + 3 -> O(N^2)
 G(N) = N^2 = O(N^2)
@@ -121,10 +120,8 @@ T(N)/G(N) = (2N^2 + N + 3)/(N^2) = 2 + 1/N + 3/N^2 = 2 + 1/k + 3/k^2 = 2
 2. Let us denote N = 2k, T(N)/G(N) = 2 + 1/2k + 3/((2k)^2) = 2
 
 T(N) = aN^2 + bN + c = O(N^2)
---------------------------------------------------------------
 
 Which of the following Big O notations is equivalent to O(N + 9999)?
-
 A. 100000
 B. 3
 C. 2N + 1
@@ -133,7 +130,6 @@ E. N^2 - 10000
 F. O(1)
 G. O(N) <- **Answer**
 H. O(N^2) 
---------------------------------------------------------------
 
 `public static int search(int[] numbers, int targetNumber)
 {
